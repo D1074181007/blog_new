@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Hello');
 });
+
+Route::get('/user/{id}/{Name}' ,
+            Function ($id , $Name) {return 'Hello ' . $id . " " . $Name; }
+            ) ->where(['id' => '[0-9]+' , 'Name' => '[A-Za-z]+']) ;
