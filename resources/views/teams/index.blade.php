@@ -23,6 +23,5 @@
 <body class="antialiased">
 <h1>這裡是顯示球隊的View</h1>
 
-<a href="<?php echo route('players.index'); ?>">回到球隊首頁</a>
 </body>
 </html>
